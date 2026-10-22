@@ -101,16 +101,16 @@ const rows = [
   ['phone-hello', 'A2', 'Phone & messages', 'Εμπρός;', 'Embrós?', 'Hello? (answering the phone)'],
   ['call-later', 'A2', 'Phone & messages', 'Θα σας πάρω τηλέφωνο αργότερα.', 'Tha sas páro tiléfono arghótera.', 'I’ll call you later.'],
   ['speak-with', 'A2', 'Phone & messages', 'Μπορώ να μιλήσω με την κυρία Παπαδοπούλου;', 'Boró na milíso me tin kiría Papadhopoúlou?', 'May I speak with Mrs Papadopoulou?'],
-  ['love-you', 'A1', 'Love & us', 'Σ’ αγαπώ.', 'S’ aghapó.', 'I love you.'],
-  ['my-love', 'A1', 'Love & us', 'Καλημέρα, αγάπη μου.', 'Kaliméra, aghápi mou.', 'Good morning, my love.', 'αγάπη μου (my love) is what Greek couples say all day long.'],
-  ['miss-you', 'A1', 'Love & us', 'Μου λείπεις.', 'Mou lípis.', 'I miss you.', 'Literally “you are missing from me”.'],
-  ['sweet-dreams', 'A1', 'Love & us', 'Καληνύχτα, όνειρα γλυκά.', 'Kaliníhta, ónira ghliká.', 'Good night, sweet dreams.'],
-  ['beautiful', 'A1', 'Love & us', 'Είσαι πολύ όμορφη.', 'Íse polí ómorfi.', 'You are very beautiful.', 'To a man: Είσαι πολύ όμορφος.'],
-  ['where-are-you', 'A1', 'Love & us', 'Πού είσαι; Θα αργήσεις;', 'Pou íse? Tha arghísis?', 'Where are you? Will you be late?'],
-  ['what-eat', 'A1', 'Love & us', 'Τι θα φάμε απόψε;', 'Ti tha fáme apópse?', 'What shall we eat tonight?'],
-  ['walk', 'A1', 'Love & us', 'Πάμε μια βόλτα;', 'Páme mia vólta?', 'Shall we go for a walk?', 'The evening βόλτα is a Greek institution.'],
-  ['happy-with-you', 'A2', 'Love & us', 'Είμαι πολύ ευτυχισμένη μαζί σου.', 'Íme polí eftihizméni mazí sou.', 'I am very happy with you.', 'A man says ευτυχισμένος.'],
-  ['proud', 'A2', 'Love & us', 'Είμαι περήφανος για σένα.', 'Íme perífanos ya séna.', 'I am proud of you.', 'A woman says περήφανη. You will hear this one a lot.']
+  ['where-are-you', 'A1', 'At home', 'Πού είσαι; Θα αργήσεις;', 'Pou íse? Tha arghísis?', 'Where are you? Will you be late?'],
+  ['what-eat', 'A1', 'At home', 'Τι θα φάμε απόψε;', 'Ti tha fáme apópse?', 'What shall we eat tonight?'],
+  ['walk', 'A1', 'At home', 'Πάμε μια βόλτα;', 'Páme mia vólta?', 'Shall we go for a walk?', 'The evening βόλτα is a Greek institution.'],
+  ['bread', 'A1', 'At home', 'Πήρες ψωμί;', 'Píres psomí?', 'Did you get bread?'],
+  ['cold', 'A1', 'At home', 'Κάνει κρύο. Κλείσε το παράθυρο.', 'Káni krío. Klíse to paráthiro.', 'It’s cold. Close the window.'],
+  ['tired', 'A1', 'At home', 'Είμαι κουρασμένη σήμερα.', 'Íme kourazméni símera.', 'I’m tired today.', 'A man says κουρασμένος.'],
+  ['film', 'A1', 'At home', 'Τι λες, βλέπουμε μια ταινία;', 'Ti les, vlépoume mia tenía?', 'What do you think, shall we watch a film?'],
+  ['supermarket', 'A2', 'At home', 'Γράψε τι χρειαζόμαστε από το σούπερ μάρκετ.', 'Ghrápse ti hriazómaste apó to soúper márket.', 'Write down what we need from the supermarket.'],
+  ['electricity-bill', 'A2', 'At home', 'Πλήρωσες τον λογαριασμό του ρεύματος;', 'Plíroses ton loghariazmó tou révmatos?', 'Did you pay the electricity bill?'],
+  ['neighbour', 'A2', 'At home', 'Η γειτόνισσά μας έφερε γλυκό.', 'I yitónissa mas éfere ghlikó.', 'The neighbour brought us something sweet.']
 ];
 
 export const phrases = rows.map(([id, level, category, el, tr, en, note]) => ({ id, level, category, el, tr, en, ...(note ? { note } : {}) }));

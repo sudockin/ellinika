@@ -20,11 +20,11 @@ Every Greek line has a Latin transliteration, which you can turn off in Settings
 
 ### Made for Sana
 
-- Greets her by name and time of day (Καλημέρα, πριγκίπισσα!) and shows a short daily note in Greek, English and French
-- Princess ranks from points, from Little sparkle ✨ to Queen of Greek 👑, plus 16 badges, combo streaks and a daily-goal ring
-- Animated celebrations (hearts, sparkles, crowns) for correct answers, finished lessons, conversations, good paper scores, new badges and new ranks. Motion is off when the device asks for reduced motion.
-- A "Love & us" phrase set and a "Sunday lunch with the family" role play
-- Her name is in Settings, and progress saved before these changes is kept and counted toward badges
+- Greets her by name and shows a Greek word of the day with its story, often linked to French or Arabic
+- Six titles earned with points (Alpha, Olive branch, Cyclades, Acropolis, Aegean, Laurel wreath), 16 badges, combo streaks and a daily-goal ring
+- Light gold and rose confetti for finished lessons, conversations, good paper scores and new titles. Motion is off when the device asks for reduced motion.
+- An "At home" phrase set and a "Sunday lunch with the family" conversation
+- Her name is in Settings. Progress saved before these changes is kept and counted toward badges
 
 ## The exam format used
 
