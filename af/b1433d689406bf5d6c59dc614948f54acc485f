@@ -1,0 +1,75 @@
+dist/icon.svg
+  s_ca26d508250474::t_9a13082de0d485 1
+dist/styles.css
+  s_ca26d508250474::t_9a13082de0d485 1-166
+dist/audio/manifest.json
+  s_ca26d508250474::t_9a13082de0d485 1-7
+scripts/make-icons.mjs
+  s_ca26d508250474::t_9a13082de0d485 1-29
+scripts/serve.mjs
+  s_ca26d508250474::t_9a13082de0d485 1-11
+scripts/speech-corpus.mjs
+  s_ca26d508250474::t_9a13082de0d485 1-14
+.github/workflows/pages.yml
+  s_ca26d508250474::t_12af1121c6e6ab 1-34
+.gitignore
+  s_ca26d508250474::t_eb3e73680c13f9 1-2
+README.md
+  s_ca26d508250474::t_ad09c6f09c7614 1-74
+dist/app.mjs
+  s_ca26d508250474::t_6252336705b815 1-265
+dist/content.mjs
+  s_ca26d508250474::t_9b4738b252af38 1-18
+dist/core.mjs
+  s_ca26d508250474::t_a93519b258690e 1-65
+dist/data/alphabet.mjs
+  s_ca26d508250474::t_1d95ecec11612c 1-47
+dist/data/exam.mjs
+  s_ca26d508250474::t_ca0cb18fe7610d 1-327
+dist/data/lessons-a1.mjs
+  s_ca26d508250474::t_eff7a05bb92040 1-267
+dist/data/lessons-a2.mjs
+  s_ca26d508250474::t_68ae6a7593df2b 1-225
+dist/data/notes.mjs
+  s_ca26d508250474::t_79640440cc633b 1-18
+dist/data/phrases.mjs
+  s_ca26d508250474::t_c451933b2e83f7 1-116
+dist/data/scenarios.mjs
+  s_ca26d508250474::t_c16f19d08f71e5 1-119
+dist/index.html
+  s_ca26d508250474::t_b5e06bfe7bc20a 1-25
+dist/manifest.webmanifest
+  s_ca26d508250474::t_4b0808d2d34c9b 1
+dist/rewards.mjs
+  s_ca26d508250474::t_511c0bfd74c632 1-48
+dist/sw.js
+  s_ca26d508250474::t_7965862ecfa0d4 1-53
+dist/voice.mjs
+  s_ca26d508250474::t_b33b5d15b03f79 1-53
+package.json
+  s_ca26d508250474::t_832bd12f1b618d 1-17
+tests/content.test.mjs
+  s_ca26d508250474::t_ca8834c631dc28 1-44
+tests/core.test.mjs
+  s_ca26d508250474::t_dd1a031c0f7c3d 1-54
+tests/rewards.test.mjs
+  s_ca26d508250474::t_506e5084c418e2 1-37
+tests/voice.test.mjs
+  s_ca26d508250474::t_4005422b38afdf 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "afb1433d689406bf5d6c59dc614948f54acc485f",
+  "prompts": {},
+  "sessions": {
+    "s_ca26d508250474": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "57cb2ad9-f957-4a9e-a842-6d725c2c2f29",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "pj <e.valsamakis@gmail.com>"
+    }
+  }
+}
