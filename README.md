@@ -20,7 +20,7 @@ Every Greek line has a Latin transliteration, which you can turn off in Settings
 
 ### Made for Sana
 
-- Greets her by name and time of day (Καλημέρα, πριγκίπισσα!) and shows a daily note in Greek, English and French
+- Greets her by name and time of day (Καλημέρα, πριγκίπισσα!) and shows a short daily note in Greek, English and French
 - Princess ranks from points, from Little sparkle ✨ to Queen of Greek 👑, plus 16 badges, combo streaks and a daily-goal ring
 - Animated celebrations (hearts, sparkles, crowns) for correct answers, finished lessons, conversations, good paper scores, new badges and new ranks. Motion is off when the device asks for reduced motion.
 - A "Love & us" phrase set and a "Sunday lunch with the family" role play
@@ -71,4 +71,4 @@ tests/             core logic, voice selection and content checks (answer keys, 
 ## Notes
 
 - Progress stays in the browser. Use Export backup in Settings to move it between devices.
-- Rumbo has no license file. Check with its author before publishing this derived app publicly.
+- Built on the structure of Rumbo by the same author.
