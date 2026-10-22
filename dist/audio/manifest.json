@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "locale": "el-GR",
+  "provider": "none",
+  "note": "No recordings are bundled yet. The app uses a Greek voice installed on the device. Recorded clips can be added later in the same format as Rumbo.",
+  "clips": {}
+}
