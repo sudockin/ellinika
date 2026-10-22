@@ -1,0 +1,43 @@
+dist/index.html
+  s_ca26d508250474::t_a3d19e60327e10 5,13-14,19
+dist/styles.css
+  s_ca26d508250474::t_a80fefa2633272 151-152
+  s_ca26d508250474::t_a3d19e60327e10 73-85,87-93,95,99-106,110-112,115-118,120,122,124-125,127,129,131,133-135,137-141,143-147,150
+tests/rewards.test.mjs
+  s_ca26d508250474::t_0a0473456901d9 35-36
+  s_ca26d508250474::t_785c93b02d30c3 10
+dist/rewards.mjs
+  s_ca26d508250474::t_4d31b795691ba7 4,6-10,22,25-36,38-39,43
+  s_ca26d508250474::t_2736e76d1cbf46 11
+  s_ca26d508250474::t_0281e3e6b2433e 44
+dist/data/notes.mjs
+  s_ca26d508250474::t_76f7798c3c146a 5
+  s_ca26d508250474::t_0a0473456901d9 1-2,4,6-16,19
+dist/app.mjs
+  s_ca26d508250474::t_76f7798c3c146a 2,18,20,22,24-25,28-32,34-38,92,96,98,100,110,112,160,186,190,197-198,220,225,230,243,254,260,267
+dist/manifest.webmanifest
+  s_ca26d508250474::t_a3d19e60327e10 1
+dist/data/phrases.mjs
+  s_ca26d508250474::t_0a0473456901d9 113
+  s_ca26d508250474::t_2736e76d1cbf46 104-112
+README.md
+  s_ca26d508250474::t_04508427f64db9 23-27
+dist/sw.js
+  s_ca26d508250474::t_2db84da4cc0502 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c427fd71240de7de7e2eefd176b7b585150ce771",
+  "prompts": {},
+  "sessions": {
+    "s_ca26d508250474": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "57cb2ad9-f957-4a9e-a842-6d725c2c2f29",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "pj <e.valsamakis@gmail.com>"
+    }
+  }
+}
