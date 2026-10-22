@@ -7,7 +7,7 @@ import {notes} from '../dist/content.mjs';
 test('ranks climb in order and the top rank is complete',()=>{
  for(let i=1;i<ranks.length;i++)assert.ok(ranks[i].min>ranks[i-1].min);
  assert.equal(rankFor(0).index,0);
- assert.equal(rankFor(150).title,'Olive branch');
+ assert.equal(rankFor(150).title,'Alpha princess');
  assert.equal(rankFor(99999).next,null);
  assert.equal(rankFor(99999).progress,1);
  assert.ok(Math.abs(rankFor(200).progress-.5)<1e-9);

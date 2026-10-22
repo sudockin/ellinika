@@ -1,14 +1,14 @@
 import {lessons,phrases,LEVELS,PAPERS} from './content.mjs';
 import {streak} from './core.mjs';
 
-// Points move through six titles, each marked with a Greek numeral letter.
+// Points climb through princess ranks; the last one is the crown.
 export const ranks = [
-  { min: 0, mark: 'Α', title: 'Alpha', el: 'Άλφα' },
-  { min: 100, mark: 'Β', title: 'Olive branch', el: 'Κλαδί ελιάς' },
-  { min: 300, mark: 'Γ', title: 'Cyclades', el: 'Κυκλάδες' },
-  { min: 700, mark: 'Δ', title: 'Acropolis', el: 'Ακρόπολη' },
-  { min: 1200, mark: 'Ε', title: 'Aegean', el: 'Αιγαίο' },
-  { min: 2000, mark: 'ΣΤ', title: 'Laurel wreath', el: 'Δάφνινο στεφάνι' }
+  { min: 0, mark: '✨', title: 'Little sparkle', el: 'Μικρή σπίθα' },
+  { min: 100, mark: '🌸', title: 'Alpha princess', el: 'Πριγκίπισσα του άλφα' },
+  { min: 300, mark: '🐚', title: 'Island princess', el: 'Πριγκίπισσα των νησιών' },
+  { min: 700, mark: '🏛️', title: 'Princess of Athens', el: 'Πριγκίπισσα της Αθήνας' },
+  { min: 1200, mark: '🌊', title: 'Aegean princess', el: 'Πριγκίπισσα του Αιγαίου' },
+  { min: 2000, mark: '👑', title: 'Queen of Greek', el: 'Βασίλισσα των ελληνικών' }
 ];
 
 export function points(state) { return Object.values(state.activity).reduce((sum, a) => sum + a.points, 0); }
@@ -22,21 +22,21 @@ const done = (state, list) => list.length > 0 && list.every(l => state.completed
 const home = phrases.filter(p => p.category === 'At home');
 
 export const badges = [
-  { id: 'first-lesson', icon: 'book', title: 'First lesson', desc: 'Finish your first lesson', test: s => Object.keys(s.completed).length >= 1 },
-  { id: 'alphabet', icon: 'alpha', title: 'The alphabet', desc: 'Finish the letters lesson', test: s => !!s.completed['a1-letters'] },
-  { id: 'streak-3', icon: 'flame', title: '3-day streak', desc: 'Practise 3 days in a row', test: s => streak(s.activity) >= 3 },
-  { id: 'streak-7', icon: 'flame', title: '7-day streak', desc: 'Practise 7 days in a row', test: s => streak(s.activity) >= 7 },
-  { id: 'streak-30', icon: 'flame', title: '30-day streak', desc: 'Practise 30 days in a row', test: s => streak(s.activity) >= 30 },
-  { id: 'cards-25', icon: 'cards', title: '25 phrases', desc: 'Review 25 different phrases', test: s => Object.keys(s.cards).length >= 25 },
-  { id: 'voice-5', icon: 'mic', title: 'Out loud', desc: 'Speak Greek aloud 5 times', test: s => s.speaking >= 5 },
-  { id: 'chat-3', icon: 'chat', title: '3 conversations', desc: 'Finish 3 conversations', test: s => s.scenarios.length >= 3 },
-  { id: 'family', icon: 'home', title: 'Sunday lunch', desc: 'Finish the family lunch conversation', test: s => s.scenarios.includes('family') },
-  { id: 'home-words', icon: 'cards', title: 'At home', desc: 'Review every “At home” phrase', test: s => home.every(p => s.cards[p.id]) },
-  { id: 'first-paper', icon: 'pen', title: 'First paper', desc: 'Try your first practice paper', test: s => Object.keys(s.exam).length >= 1 },
-  { id: 'goal-day', icon: 'clock', title: 'Daily goal', desc: 'Reach your daily goal', test: s => !!s.goalDay },
+  { id: 'first-lesson', emoji: '🌸', icon: 'book', title: 'First petal', desc: 'Finish your first lesson', test: s => Object.keys(s.completed).length >= 1 },
+  { id: 'alphabet', emoji: '🔤', icon: 'alpha', title: 'Alpha to omega', desc: 'Finish the letters lesson', test: s => !!s.completed['a1-letters'] },
+  { id: 'streak-3', emoji: '🔥', icon: 'flame', title: 'Three-day sparkle', desc: 'Practise 3 days in a row', test: s => streak(s.activity) >= 3 },
+  { id: 'streak-7', emoji: '💫', icon: 'flame', title: 'Week streak', desc: 'Practise 7 days in a row', test: s => streak(s.activity) >= 7 },
+  { id: 'streak-30', emoji: '💎', icon: 'flame', title: 'Diamond habit', desc: 'Practise 30 days in a row', test: s => streak(s.activity) >= 30 },
+  { id: 'cards-25', emoji: '🃏', icon: 'cards', title: 'Card queen', desc: 'Review 25 different phrases', test: s => Object.keys(s.cards).length >= 25 },
+  { id: 'voice-5', emoji: '🎤', icon: 'mic', title: 'Brave voice', desc: 'Speak Greek aloud 5 times', test: s => s.speaking >= 5 },
+  { id: 'chat-3', emoji: '💬', icon: 'chat', title: 'Chatterbox', desc: 'Finish 3 conversations', test: s => s.scenarios.length >= 3 },
+  { id: 'family', emoji: '🫶', icon: 'home', title: 'Family favourite', desc: 'Finish the family lunch conversation', test: s => s.scenarios.includes('family') },
+  { id: 'home-words', emoji: '🏡', icon: 'cards', title: 'At home', desc: 'Review every “At home” phrase', test: s => home.every(p => s.cards[p.id]) },
+  { id: 'first-paper', emoji: '📝', icon: 'pen', title: 'Exam brave', desc: 'Try your first practice paper', test: s => Object.keys(s.exam).length >= 1 },
+  { id: 'goal-day', emoji: '🎯', icon: 'clock', title: 'Goal getter', desc: 'Reach your daily goal', test: s => !!s.goalDay },
   ...LEVELS.flatMap(lv => [
-    { id: `lessons-${lv}`, icon: 'check', title: `${lv} lessons`, desc: `Finish every ${lv} lesson`, test: s => done(s, lessons.filter(l => l.level === lv)) },
-    { id: `papers-${lv}`, icon: 'award', title: `${lv} papers`, desc: `Try all four ${lv} papers`, test: s => PAPERS.every(p => s.exam[`${lv}-${p}`]) }
+    { id: `lessons-${lv}`, emoji: lv === 'A1' ? '🏝️' : '🏰', icon: 'check', title: `${lv} princess`, desc: `Finish every ${lv} lesson`, test: s => done(s, lessons.filter(l => l.level === lv)) },
+    { id: `papers-${lv}`, emoji: '🎓', icon: 'award', title: `${lv} exam ready`, desc: `Try all four ${lv} papers`, test: s => PAPERS.every(p => s.exam[`${lv}-${p}`]) }
   ])
 ];
 

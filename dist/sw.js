@@ -1,4 +1,4 @@
-const CACHE='ellinika-shell-v6';
+const CACHE='ellinika-shell-v7';
 const ASSETS=['./','./index.html','./styles.css','./app.mjs','./core.mjs','./voice.mjs','./content.mjs','./rewards.mjs','./data/lessons-a1.mjs','./data/lessons-a2.mjs','./data/phrases.mjs','./data/scenarios.mjs','./data/alphabet.mjs','./data/exam.mjs','./data/notes.mjs','./audio/manifest.json','./icon.svg','./icon-192.png','./icon-512.png','./icon-maskable.png','./manifest.webmanifest'];
 async function installPack(){
  const cache=await caches.open(CACHE);
