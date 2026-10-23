@@ -26,6 +26,12 @@ Every Greek line has a Latin transliteration, which you can turn off in Settings
 - An "At home" phrase set and a "Sunday lunch with the family" conversation
 - Her name is in Settings. Progress saved before these changes is kept and counted toward badges
 
+## Profiles
+
+Several people can learn on one device. The app opens on a “Who’s learning today?” screen with a card for each person (rank, points, last practice) and a name box: a name used before opens that person’s progress, and a new name starts a fresh profile. With only one profile the app opens straight away. Switch from the sidebar or the avatar at the top, and remove a profile in Settings.
+
+Progress saved before profiles existed becomes the first profile and stays under the original storage key, so nothing is moved. Profiles live in the browser on each device; use Export backup and Import backup to move one to another device. Princess mode is a per-profile setting, on for Sana and off for other names.
+
 ## The exam format used
 
 The papers follow the official A1 and A2 structure published by the Centre for the Greek Language. Each of the four papers is worth 25 marks.

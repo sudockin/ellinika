@@ -2,13 +2,14 @@ import {lessons,phrases,LEVELS,PAPERS} from './content.mjs';
 import {streak} from './core.mjs';
 
 // Points climb through princess ranks; the last one is the crown.
+// Profiles without princess mode see the plain titles.
 export const ranks = [
-  { min: 0, mark: '✨', title: 'Little sparkle', el: 'Μικρή σπίθα' },
-  { min: 100, mark: '🌸', title: 'Alpha princess', el: 'Πριγκίπισσα του άλφα' },
-  { min: 300, mark: '🐚', title: 'Island princess', el: 'Πριγκίπισσα των νησιών' },
-  { min: 700, mark: '🏛️', title: 'Princess of Athens', el: 'Πριγκίπισσα της Αθήνας' },
-  { min: 1200, mark: '🌊', title: 'Aegean princess', el: 'Πριγκίπισσα του Αιγαίου' },
-  { min: 2000, mark: '👑', title: 'Queen of Greek', el: 'Βασίλισσα των ελληνικών' }
+  { min: 0, mark: '✨', title: 'Little sparkle', el: 'Μικρή σπίθα', plain: { title: 'Little sparkle', el: 'Μικρή σπίθα' } },
+  { min: 100, mark: '🌸', title: 'Alpha princess', el: 'Πριγκίπισσα του άλφα', plain: { title: 'Alpha reader', el: 'Το άλφα' } },
+  { min: 300, mark: '🐚', title: 'Island princess', el: 'Πριγκίπισσα των νησιών', plain: { title: 'Island hopper', el: 'Τα νησιά' } },
+  { min: 700, mark: '🏛️', title: 'Princess of Athens', el: 'Πριγκίπισσα της Αθήνας', plain: { title: 'Athens local', el: 'Η Αθήνα' } },
+  { min: 1200, mark: '🌊', title: 'Aegean princess', el: 'Πριγκίπισσα του Αιγαίου', plain: { title: 'Aegean sailor', el: 'Το Αιγαίο' } },
+  { min: 2000, mark: '👑', title: 'Queen of Greek', el: 'Βασίλισσα των ελληνικών', plain: { title: 'Master of Greek', el: 'Τα ελληνικά, άριστα' } }
 ];
 
 export function points(state) { return Object.values(state.activity).reduce((sum, a) => sum + a.points, 0); }
@@ -35,7 +36,7 @@ export const badges = [
   { id: 'first-paper', emoji: '📝', icon: 'pen', title: 'Exam brave', desc: 'Try your first practice paper', test: s => Object.keys(s.exam).length >= 1 },
   { id: 'goal-day', emoji: '🎯', icon: 'clock', title: 'Goal getter', desc: 'Reach your daily goal', test: s => !!s.goalDay },
   ...LEVELS.flatMap(lv => [
-    { id: `lessons-${lv}`, emoji: lv === 'A1' ? '🏝️' : '🏰', icon: 'check', title: `${lv} princess`, desc: `Finish every ${lv} lesson`, test: s => done(s, lessons.filter(l => l.level === lv)) },
+    { id: `lessons-${lv}`, emoji: lv === 'A1' ? '🏝️' : '🏰', icon: 'check', title: `${lv} princess`, plainTitle: `${lv} complete`, desc: `Finish every ${lv} lesson`, test: s => done(s, lessons.filter(l => l.level === lv)) },
     { id: `papers-${lv}`, emoji: '🎓', icon: 'award', title: `${lv} exam ready`, desc: `Try all four ${lv} papers`, test: s => PAPERS.every(p => s.exam[`${lv}-${p}`]) }
   ])
 ];
