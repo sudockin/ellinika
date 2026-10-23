@@ -1,5 +1,15 @@
 # Ellinika · Greek A1–A2
 
+**Λίγα ελληνικά κάθε μέρα. A little Greek every day, all the way to the certificate.**
+
+<p align="center">
+  <a href="https://sudockin.github.io/ellinika/"><img alt="Open Ellinika" src="https://img.shields.io/badge/Open%20the%20app-sudockin.github.io%2Fellinika-9e4a6a?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
+</p>
+
+<p align="center"><b><a href="https://sudockin.github.io/ellinika/">sudockin.github.io/ellinika</a></b><br>Free · no sign-up · works on phones and offline · add it to your home screen</p>
+
+![Ellinika home screen with rank, word of the day and the island illustration](docs/images/ellinika-home.png)
+
 A free, mobile-first web app for learning everyday Greek and preparing for the A1 and A2 levels of the Greek Language Certificate (Πιστοποίηση Ελληνομάθειας, [greek-language.gr/certification](https://www.greek-language.gr/certification/)).
 
 It is built on the structure of [Rumbo](https://github.com/sudockin/rumbo), a Mexican Spanish app: short lessons, spaced review, speaking practice, role plays and local-only progress. Ellinika adds Greek-specific parts and an exam section.
@@ -31,6 +41,16 @@ Every Greek line has a Latin transliteration, which you can turn off in Settings
 Several people can learn on one device. The app opens on a “Who’s learning today?” screen with a card for each person (rank, points, last practice) and a name box: a name used before opens that person’s progress, and a new name starts a fresh profile. With only one profile the app opens straight away. Switch from the sidebar or the avatar at the top, and remove a profile in Settings.
 
 Progress saved before profiles existed becomes the first profile and stays under the original storage key, so nothing is moved. Profiles live in the browser on each device; use Export backup and Import backup to move one to another device. Princess mode is a per-profile setting, on for Sana and off for other names.
+
+## Screenshots
+
+| Who’s learning? | Progress, ranks and badges |
+|---|---|
+| ![Login screen with two profiles](docs/images/ellinika-login.png) | ![Progress page with princess ranks and badges](docs/images/ellinika-progress.png) |
+| **Exam practice in the official format** | **A rank-up celebration** |
+| ![A1 exam overview](docs/images/ellinika-exam.png) | ![Celebration card for a new rank](docs/images/ellinika-celebration.png) |
+
+<p align="center"><img src="docs/images/ellinika-phone.png" width="300" alt="Ellinika on a phone"></p>
 
 ## The exam format used
 
