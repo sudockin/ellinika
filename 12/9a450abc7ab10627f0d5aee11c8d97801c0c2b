@@ -1,0 +1,21 @@
+README.md
+  s_ca26d508250474::t_9be317061ec7cf 3-12,44-53
+dist/styles.css
+  s_ca26d508250474::t_98dafa0906b1d3 112,211
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "129a450abc7ab10627f0d5aee11c8d97801c0c2b",
+  "prompts": {},
+  "sessions": {
+    "s_ca26d508250474": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "57cb2ad9-f957-4a9e-a842-6d725c2c2f29",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "pj <e.valsamakis@gmail.com>"
+    }
+  }
+}
